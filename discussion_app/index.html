@@ -1,0 +1,48 @@
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion app</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <header  class="heading">Discussion Portal</header>
+    <div class="container">
+       
+            <div class="left_pane">
+                <div class="input_container">
+                    <button class="new_question">New Question form...</button>
+                    <input placeholder="search questions... " class="search"/>
+                    <div id="question_container">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_pane">
+                <div class="right_container" id="right_container">
+                    <h1 class="Welcome">Welcome to Discussion Portal !</h1>
+                    <p class="para"><b>Enter a subject and question to get started</b></p>
+                    <input id="subject" placeholder="Subject" class="subject"/>
+                    <textarea id="description" placeholder="Question" class="question"></textarea>
+                    <button id="submit" class="Submit">Submit</button>
+
+                </div>
+
+                <div class="response_section " style="display: none;" id="response_section">
+                    <div class="response_header right_container" id="response_body">
+                       <h2 class="response"> Response </h2>
+                    </div>
+                     <div class="response_body right_container" >
+                         <h2 class="response">Add Response</h2>
+                         <input id="response_name"  placeholder="Enter name" class="subject"/>
+                         <textarea id="response_desc" placeholder="Enter Component" class="question"></textarea>
+                         <button id="response_sub" class="Submit">Submit</button>
+                     </div>
+                </div>
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
